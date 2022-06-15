@@ -1,0 +1,163 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+img {
+    height: 300px;
+
+    object-fit: cover;
+}
+
+.card_image {
+    height: 75px;
+    width: 75px;
+}
+
+h1,
+h2,p {
+    color: gray;
+}
+
+.arrow_image {
+    height: 40px;
+}
+
+header {
+    div {
+        display: grid;
+        background-image: url("../images/hills.jpg");
+        background-size: cover;
+        max-width: 100%;
+        min-height: 50vh;
+        text-align: center;
+        background-repeat: no-repeat;
+
+        h1 {
+            font-size: 3rem;
+            width: 50%;
+            margin: 0 auto;
+            align-self: center;
+            color: white;
+        }
+    }
+}
+
+main {
+    display: grid;
+
+    .two_columns_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        background-color: azure;
+
+        .image {
+            height: 300px;
+            width: 100%;
+
+            img {
+                object-fit: cover;
+                width: 100%;
+            }
+        }
+    }
+
+    .three_columns_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+
+    }
+
+    #travel {
+        background-image: url("../images/travel.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 70vh;
+
+        .three_columns_grid {
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
+
+    .two_rows_grid {
+        display: grid;
+        align-items: center;
+
+        .card {
+            text-align: center;
+            background-color: white;
+            padding: 50px;
+            border-radius: 15px;
+        }
+
+        .one_row_grid {
+            text-align: center;
+            padding: 10px;
+
+            h1 {
+                color: gray;
+            }
+        }
+    }
+
+    .row_grid {
+        text-align: center;
+    }
+
+    #travel_freedom {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+
+
+        #freedom_one_container,
+        #freedom_two_container,
+        #freedom_last_container {
+            height: 700px;
+            width: 100%;
+            #freedom_one,
+            #freedom_two {
+                height:700px;
+                width: 100%;
+            }
+
+            #freedom_three,
+            #freedom_four {
+                height: 350px;
+                width: 100%
+            }
+        }
+        #freedom_last_container{
+            display: grid;
+        }
+    }
+    #things_to_do{
+        background-image: url("../images/meteors.jpg");
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        margin-top: 50px;
+        #things_heading{
+            h1{
+            color: white;
+            font-size: 50px;
+        }
+    }
+    #things_list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        .thing h1,.thing h2,.thing p {
+            color:white;
+        }
+        .thing{
+            display: grid;
+        }
+
+    }
+}
+}

@@ -1,0 +1,143 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+img {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card_image {
+  height: 75px;
+  width: 75px;
+}
+
+h1,
+h2, p {
+  color: gray;
+}
+
+.arrow_image {
+  height: 40px;
+}
+
+header div {
+  display: grid;
+  background-image: url("../images/hills.jpg");
+  background-size: cover;
+  max-width: 100%;
+  min-height: 50vh;
+  text-align: center;
+  background-repeat: no-repeat;
+}
+header div h1 {
+  font-size: 3rem;
+  width: 50%;
+  margin: 0 auto;
+  align-self: center;
+  color: white;
+}
+
+main {
+  display: grid;
+}
+main .two_columns_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  background-color: azure;
+}
+main .two_columns_grid .image {
+  height: 300px;
+  width: 100%;
+}
+main .two_columns_grid .image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+main .three_columns_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+main #travel {
+  background-image: url("../images/travel.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+}
+main #travel .three_columns_grid {
+  width: 70%;
+  margin: 0 auto;
+}
+main .two_rows_grid {
+  display: grid;
+  align-items: center;
+}
+main .two_rows_grid .card {
+  text-align: center;
+  background-color: white;
+  padding: 50px;
+  border-radius: 15px;
+}
+main .two_rows_grid .one_row_grid {
+  text-align: center;
+  padding: 10px;
+}
+main .two_rows_grid .one_row_grid h1 {
+  color: gray;
+}
+main .row_grid {
+  text-align: center;
+}
+main #travel_freedom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+main #travel_freedom #freedom_one_container,
+main #travel_freedom #freedom_two_container,
+main #travel_freedom #freedom_last_container {
+  height: 700px;
+  width: 100%;
+}
+main #travel_freedom #freedom_one_container #freedom_one,
+main #travel_freedom #freedom_one_container #freedom_two,
+main #travel_freedom #freedom_two_container #freedom_one,
+main #travel_freedom #freedom_two_container #freedom_two,
+main #travel_freedom #freedom_last_container #freedom_one,
+main #travel_freedom #freedom_last_container #freedom_two {
+  height: 700px;
+  width: 100%;
+}
+main #travel_freedom #freedom_one_container #freedom_three,
+main #travel_freedom #freedom_one_container #freedom_four,
+main #travel_freedom #freedom_two_container #freedom_three,
+main #travel_freedom #freedom_two_container #freedom_four,
+main #travel_freedom #freedom_last_container #freedom_three,
+main #travel_freedom #freedom_last_container #freedom_four {
+  height: 350px;
+  width: 100%;
+}
+main #travel_freedom #freedom_last_container {
+  display: grid;
+}
+main #things_to_do {
+  background-image: url("../images/meteors.jpg");
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  margin-top: 50px;
+}
+main #things_to_do #things_heading h1 {
+  color: white;
+  font-size: 50px;
+}
+main #things_to_do #things_list .thing h1, main #things_to_do #things_list .thing h2, main #things_to_do #things_list .thing p {
+  color: white;
+}/*# sourceMappingURL=style.css.map */
